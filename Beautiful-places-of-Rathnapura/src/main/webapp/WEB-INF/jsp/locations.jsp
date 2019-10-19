@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,32 +10,31 @@
 </head>
 <body>
 	<div class="wrapper">
-	<h1>Hello</h1>
 		<div class="table">
 			<table>
 				<tr>
-					<td><img src="/webapp/WEB-INF/images/img.jpg"><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
-					<td><img src=""><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
-					<td><img src=""><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
-					<td><img src=""><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
+					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
+					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
+					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
+					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
 				</tr>
 				<tr>
-					<td><img src=""><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
-					<td><img src=""><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
-					<td><img src=""><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
-					<td><img src=""><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
+					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
+					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
+					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
+					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
 				</tr>
 				<tr>
-					<td><img src=""><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
-					<td><img src=""><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
-					<td><img src=""><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
-					<td><img src=""><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
+					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
+					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
+					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
+					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
 				</tr>
 				<tr>
-					<td><img src=""><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
-					<td><img src=""><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
-					<td><img src=""><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
-					<td><img src=""><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
+					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
+					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
+					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
+					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
 				</tr>
 			</table>
 		</div><!-- table -->
