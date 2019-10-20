@@ -12,30 +12,16 @@
 	<div class="wrapper">
 		<div class="table">
 			<table>
-				<tr>
-					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
-					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
-					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
-					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
-				</tr>
-				<tr>
-					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
-					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
-					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
-					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
-				</tr>
-				<tr>
-					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
-					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
-					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
-					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
-				</tr>
-				<tr>
-					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
-					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
-					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
-					<td><img src="<c:url value="/images/img.jpg"/>"/><p>sri lanka is the gratest island in the world</p><button>More details</button></td>
-				</tr>
+
+					<tr>
+					<c:forEach items="${contacts}" var="contact" varStatus="contactCount">
+					<c:if test="${(contactCount.count-1) mod 4 eq 0}">
+						<tr></tr>
+					</c:if>
+					<td><img src="${contact.pic}" alt="${contact.name}"/><p>${contact.name}</p><button>${contact.type}</button></td>
+					</c:forEach>
+					</tr>
+
 			</table>
 		</div><!-- table -->
 	</div><!-- wrapper -->

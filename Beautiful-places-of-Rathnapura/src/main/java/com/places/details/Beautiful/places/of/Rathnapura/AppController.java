@@ -19,6 +19,6 @@ public class AppController {
 	public String showLocations(Model model) {
 		List<ImageModel> contactList = imageService.getContactList();
 		model.addAttribute("contacts", contactList);
-		return "test";
+		return "locations";
 	}
 }

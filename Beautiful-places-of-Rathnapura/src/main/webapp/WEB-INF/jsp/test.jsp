@@ -20,7 +20,7 @@
 			<tr>
 				<td>${contact.name}</td>
 				<td>${contact.type}</td>
-				<td><img src="${contact.pic}" alt="${contact.name}"/></td>
+				<td><img src="${contact.pic}" alt="${contact.name}" width="100"/></td>
 			</tr>
 		</c:forEach>
 	</table>
