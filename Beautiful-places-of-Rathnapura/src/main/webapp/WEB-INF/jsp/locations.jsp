@@ -18,7 +18,11 @@
 					<c:if test="${(contactCount.count-1) mod 4 eq 0}">
 						<tr></tr>
 					</c:if>
-					<td><img src="${contact.pic}" alt="${contact.name}"/><p>${contact.name}</p><button>${contact.type}</button></td>
+					<td><img src="${contact.pic}" alt="${contact.name}"/><p>${contact.name}</p>
+						<form action="/placeDetails" method="post">
+							<button value= "${contact.id}" name="name">${contact.type}</button>
+						</form>
+					</td>
 					</c:forEach>
 					</tr>
 

@@ -29,15 +29,22 @@ table tr td img {
 
 table tr td p {
 	width: 250px;
-	height: 40px;
+	height: 30px;
 	text-align: center;
 	padding-right: 10px;
 }
 
 table tr td button {
 	width: 250px;
+	height: 40px;
 	background-color: green;
 	color:white;
 	height: 20px;
 	border:none;
+	border-radius:5px;
+}
+
+button a {
+	text-decoration: none;
+	color:white;
 }
