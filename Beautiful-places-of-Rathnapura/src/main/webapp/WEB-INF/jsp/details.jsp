@@ -6,12 +6,21 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link href="<c:url value="/resources/css/style-details.css" />" rel="stylesheet"  type="text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <body>
-	<div class="wrapper">
+	<div class="container">
+	<div class="card-panel hoverable"></div>
 	<h1>${details.topic}</h1>
-	<img src="${details.picture}"/>
-	<p>${details.description}</p>
+	<div class="card-panel teal lighten-2"></div>
+	<img src="${details.picture}" align="middle"/>
+	
+	 <blockquote>
+     	<p class="flow-text">${details.description}</p>
+    </blockquote>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	</div>
 </body>
 </html>

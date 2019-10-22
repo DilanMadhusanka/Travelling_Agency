@@ -7,6 +7,7 @@
 <meta charset="ISO-8859-1">
 <title>Locations of Rathnapura</title>
 <link href="<c:url value="/resources/css/style-locations.css" />" rel="stylesheet"  type="text/css" />
+
 </head>
 <body>
 	<div class="wrapper">
@@ -20,7 +21,7 @@
 					</c:if>
 					<td><img src="${contact.pic}" alt="${contact.name}"/><p>${contact.name}</p>
 						<form action="/placeDetails" method="post">
-							<button value= "${contact.id}" name="name">${contact.type}</button>
+							 <button class="btnShowDetails" value= "${contact.id}" name="name">${contact.type}</button> 
 						</form>
 					</td>
 					</c:forEach>
