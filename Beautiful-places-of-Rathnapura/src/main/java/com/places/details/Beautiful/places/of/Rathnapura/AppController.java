@@ -127,7 +127,6 @@ public class AppController {
 		for(int index= 0; index <12; index++) {
 						
 			if(detailsList.get(index).getTopic().equals(name)) {
-				//String topic = detailsList.get(index).getTopic();
 				PlacesModel placesModel = detailsList.get(index);
 				model.addAttribute("details", placesModel);
 				return "details";
