@@ -84,3 +84,11 @@ footer.page-footer {
 #footer {
 	text-align: center;
 }
+
+#search {
+	margin-left:36%;
+}
+
+#visitAll-button {
+	width:300px;
+}

@@ -12,6 +12,10 @@
 <body>
 	<div class="container">
 	<div class="card-panel hoverable"></div>
+	<div class = "errorMsg">
+		<h3>${errorMessageHeader}</h3>
+		<p>${errorMessage}</p>
+	</div>
 	<h1>${details.topic}</h1>
 	<div class="card-panel teal lighten-2"></div>
 	<img src="${details.picture}" align="middle"/>

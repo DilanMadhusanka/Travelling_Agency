@@ -17,6 +17,14 @@ h1 {
 
 img {
 	display: block;
-  margin-left: auto;
-  margin-right: auto;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+.errorMsg {
+	text-align:center;
+}
+
+.errorMsg h3 {
+	color:red;
 }

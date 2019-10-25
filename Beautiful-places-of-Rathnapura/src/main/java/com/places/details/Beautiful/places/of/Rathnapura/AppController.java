@@ -120,4 +120,23 @@ public class AppController {
 		
 		return "details";
 	}
+	
+	@RequestMapping("/searchLocation")
+	public String searchLocation(@RequestParam String name, Model model) {
+		List<PlacesModel> detailsList = placesService.getPlaceDetailsList();
+		for(int index= 0; index <12; index++) {
+						
+			if(detailsList.get(index).getTopic().equals(name)) {
+				//String topic = detailsList.get(index).getTopic();
+				PlacesModel placesModel = detailsList.get(index);
+				model.addAttribute("details", placesModel);
+				return "details";
+			}
+		}
+		
+		model.addAttribute("errorMessageHeader", "Sorry!!");
+		model.addAttribute("errorMessage", "Can not find this location!!");
+		return "details";
+	}
+	
 }

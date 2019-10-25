@@ -39,8 +39,23 @@
         <div class="row center">
           <h5 class="header col s12 light">Find the gust behind your next adventure in Rathnapura</h5>
         </div>
+        
+        <div class="row">
+    		<form class="col s12" action="/searchLocation" method="get">
+      			<div class="row">
+        			<div class="input-field col s12">
+          				<textarea id="textarea1" class="materialize-textarea" style="color:lightblue;" name="name"></textarea>
+          				<label for="textarea1">Search your location to prefer for visiting</label>
+        			</div>
+        			<button class="btn waves-effect waves-light" type="submit" id="search">Search Location
+    					<i class="material-icons right">send</i>
+  					</button>
+      			</div>
+    		</form>
+  		</div>
+        
         <div class="row center">
-          <a href="/locations" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Visit Locations</a>
+          <a href="/locations" id="visitAll-button" class="btn-large waves-effect waves-light purple darken-3">Visit to All Locations</a>
         </div>
         <br><br>
 
