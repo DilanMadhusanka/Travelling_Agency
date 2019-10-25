@@ -1,0 +1,27 @@
+@charset "ISO-8859-1";
+
+body {
+	background-color: #e3f2fd;
+}
+
+#form {
+	width:1000px;
+	margin:0 auto;
+	padding:80px;
+}
+
+.header {
+	margin-top:30px;
+	margin-bottom:20px;
+}
+
+.header h1 {
+	color:#d500f9;
+	text-align:center;
+	font-size:60px;
+	font-family:serif;
+}
+
+#btnRegister {
+	padding-bottom:40px;
+}

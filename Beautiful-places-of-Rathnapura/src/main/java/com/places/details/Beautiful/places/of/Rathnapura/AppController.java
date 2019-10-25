@@ -138,4 +138,9 @@ public class AppController {
 		return "details";
 	}
 	
+	@RequestMapping("/guideHelp")
+	public String registerAgency() {
+		return "registration";
+	}
+	
 }
