@@ -1,7 +1,5 @@
 package com.places.details.Beautiful.places.of.Rathnapura.model;
 
-import java.util.Date;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -12,7 +10,8 @@ import javax.persistence.Table;
 public class RegistrationModel {
 
 	@Id
-	private int national_id;
+	@Column(name="national_id")
+	private String national_id;
 	
 	@Column(name="first_name")
 	private String first_name;
@@ -24,7 +23,7 @@ public class RegistrationModel {
 	private String address;
 	
 	@Column(name="date")
-	private Date date;
+	private String date;
 	
 	@Column(name="num_of_team")
 	private int num_of_team;
@@ -42,7 +41,7 @@ public class RegistrationModel {
 		
 	}
 
-	public RegistrationModel(int national_id, String first_name, String last_name, String address, Date date,
+	public RegistrationModel(String national_id, String first_name, String last_name, String address, String date,
 			int num_of_team, int mobile, String email, int package_num) {
 		super();
 		this.national_id = national_id;
@@ -56,11 +55,11 @@ public class RegistrationModel {
 		this.package_num = package_num;
 	}
 
-	public int getNational_id() {
+	public String getNational_id() {
 		return national_id;
 	}
 
-	public void setNational_id(int national_id) {
+	public void setNational_id(String national_id) {
 		this.national_id = national_id;
 	}
 
@@ -88,11 +87,11 @@ public class RegistrationModel {
 		this.address = address;
 	}
 
-	public Date getDate() {
+	public String getDate() {
 		return date;
 	}
 
-	public void setDate(Date date) {
+	public void setDate(String date) {
 		this.date = date;
 	}
 
@@ -127,5 +126,7 @@ public class RegistrationModel {
 	public void setPackage_num(int package_num) {
 		this.package_num = package_num;
 	}
+	
+	
 	
 }

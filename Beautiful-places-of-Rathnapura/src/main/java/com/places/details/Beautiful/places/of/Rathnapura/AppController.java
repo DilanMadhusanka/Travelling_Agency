@@ -1,17 +1,19 @@
 package com.places.details.Beautiful.places.of.Rathnapura;
 
-import java.sql.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.places.details.Beautiful.places.of.Rathnapura.jpa.PlacesRepository;
+import com.places.details.Beautiful.places.of.Rathnapura.jpa.RegistrationRepository;
 import com.places.details.Beautiful.places.of.Rathnapura.model.ImageModel;
 import com.places.details.Beautiful.places.of.Rathnapura.model.PlacesModel;
+import com.places.details.Beautiful.places.of.Rathnapura.model.RegistrationModel;
 
 @Controller
 public class AppController {
@@ -24,6 +26,9 @@ public class AppController {
 	
 	@Autowired
 	PlacesRepository placesRepository;
+	
+	@Autowired
+	RegistrationRepository registrationRepository;
 
 	@RequestMapping("/locations")
 	public String showLocations(Model model) {
@@ -139,15 +144,15 @@ public class AppController {
 		return "details";
 	}
 	
-	@RequestMapping("/guideHelp")
+	@RequestMapping(value = "/guideHelp", method = RequestMethod.GET)
 	public String registerAgency() {
 		return "registration";
 	}
 	
-	
-	public String saveData(@RequestParam String fname, @RequestParam String lname, @RequestParam int id, @RequestParam String address,
-			@RequestParam Date D_of_reser, @RequestParam int team, @RequestParam int mob_num, @RequestParam String email, @RequestParam int pack) {
-		
+	@RequestMapping(value = "/guideHelp", method = RequestMethod.POST)
+	public String saveData(@RequestParam String fname, @RequestParam String lname, @RequestParam String id, @RequestParam String address,
+			@RequestParam String d_of_reser, @RequestParam int team, @RequestParam int mob_num, @RequestParam String email, @RequestParam int pack) {
+		registrationRepository.save(new RegistrationModel(id,fname,lname,address,d_of_reser,team,mob_num,email,pack));
 		return "registration";
 	}
 	

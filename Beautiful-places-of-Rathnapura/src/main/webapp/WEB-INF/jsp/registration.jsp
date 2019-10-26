@@ -16,7 +16,7 @@
 	</div>
 	<div class="card" id="form">
 		 <div class="row">
-    		<form class="col s12" action="/guideHelp" method="get">
+    		<form class="col s12" action="/guideHelp" method="post">
       			<div class="row">
         			<div class="input-field col s6">
           				<input id="first_name" type="text" class="validate" name="fname">
@@ -41,7 +41,7 @@
       			</div>
       			<div class="row">
         			<div class="input-field col s12">
-          				<input id="reservation" type="text" class="validate" name="D_of_reser">
+          				<input id="reservation" type="text" class="validate" name="d_of_reser">
           				<label for="reservation">Date for your Reservation</label>
         			</div>
       			</div>
@@ -71,7 +71,7 @@
           				</div>
         			</div>
       			</div>
-      			<button type="button" class="btn btn-secondary btn-lg btn-block" id="btnRegister">Block level button</button>
+      			<button type="submit" class="btn btn-secondary btn-lg btn-block" id="btnRegister">Block level button</button>
 
     		</form>
   		</div>
