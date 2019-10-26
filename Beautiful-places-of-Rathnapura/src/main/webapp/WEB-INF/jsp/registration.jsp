@@ -6,9 +6,9 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link href="<c:url value="/resources/css/style-registration.css" />" rel="stylesheet"  type="text/css" />
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
 	<div class="header">
@@ -16,42 +16,58 @@
 	</div>
 	<div class="card" id="form">
 		 <div class="row">
-    		<form class="col s12">
+    		<form class="col s12" action="/guideHelp" method="get">
       			<div class="row">
         			<div class="input-field col s6">
-          				<input id="last_name" type="text" class="validate">
-          				<label for="last_name">First Name</label>
+          				<input id="first_name" type="text" class="validate" name="fname">
+          				<label for="first_name">First Name</label>
         			</div>
         			<div class="input-field col s6">
-          				<input id="last_name" type="text" class="validate">
+          				<input id="last_name" type="text" class="validate" name="lname">
           				<label for="last_name">Last Name</label>
         			</div>
       			</div>
       			<div class="row">
         			<div class="input-field col s12">
-          				<input id="email" type="email" class="validate">
-          				<label for="email">Address</label>
+          				<input id="nationalId" type="text" class="validate" name="id">
+          				<label for="nationalId">National Identity card Number</label>
         			</div>
       			</div>
       			<div class="row">
         			<div class="input-field col s12">
-          				<input id="password" type="password" class="validate">
-          				<label for="password">Password</label>
+          				<input id="address" type="text" class="validate" name="address">
+          				<label for="address">Address</label>
         			</div>
       			</div>
       			<div class="row">
         			<div class="input-field col s12">
-          				<input id="email" type="email" class="validate">
+          				<input id="reservation" type="text" class="validate" name="D_of_reser">
+          				<label for="reservation">Date for your Reservation</label>
+        			</div>
+      			</div>
+      			<div class="row">
+        			<div class="input-field col s12">
+          				<input id="team" type="text" class="validate" name="team">
+          				<label for="team">Number of members of your team</label>
+        			</div>
+      			</div>
+      			<div class="row">
+        			<div class="input-field col s6">
+          				<input id="mobileNum" type="text" class="validate" name="mob_num">
+          				<label for="mobileNum">Mobile Number</label>
+        			</div>
+        			<div class="input-field col s6">
+          				<input id="email" type="email" class="validate" name="email">
           				<label for="email">Email</label>
         			</div>
       			</div>
       			<div class="row">
         			<div class="col s12">
-          				This is an inline input field:
+          				Package to prefer to get :
           				<div class="input-field inline">
-            				<input id="email_inline" type="email" class="validate">
-            				<label for="email_inline">Email</label>
-            				<span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+            				<input id="package" type="text" class="validate" name="pack">
+            				<label for="package">Package</label>
+            				<span class="helper-text" data-error="wrong" data-success="right">Only package number</span>
           				</div>
         			</div>
       			</div>

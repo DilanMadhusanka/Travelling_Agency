@@ -1,5 +1,6 @@
 package com.places.details.Beautiful.places.of.Rathnapura;
 
+import java.sql.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -140,6 +141,13 @@ public class AppController {
 	
 	@RequestMapping("/guideHelp")
 	public String registerAgency() {
+		return "registration";
+	}
+	
+	
+	public String saveData(@RequestParam String fname, @RequestParam String lname, @RequestParam int id, @RequestParam String address,
+			@RequestParam Date D_of_reser, @RequestParam int team, @RequestParam int mob_num, @RequestParam String email, @RequestParam int pack) {
+		
 		return "registration";
 	}
 	
