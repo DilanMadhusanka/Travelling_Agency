@@ -19,45 +19,45 @@
     		<form class="col s12" action="/guideHelp" method="post">
       			<div class="row">
         			<div class="input-field col s6">
-          				<input id="first_name" type="text" class="validate" name="fname">
+          				<input id="first_name" type="text" class="validate" name="fname" required>
           				<label for="first_name">First Name</label>
         			</div>
         			<div class="input-field col s6">
-          				<input id="last_name" type="text" class="validate" name="lname">
+          				<input id="last_name" type="text" class="validate" name="lname" required>
           				<label for="last_name">Last Name</label>
         			</div>
       			</div>
       			<div class="row">
         			<div class="input-field col s12">
-          				<input id="nationalId" type="text" class="validate" name="id">
+          				<input id="nationalId" type="text" class="validate" name="id" required>
           				<label for="nationalId">National Identity card Number</label>
         			</div>
       			</div>
       			<div class="row">
         			<div class="input-field col s12">
-          				<input id="address" type="text" class="validate" name="address">
+          				<input id="address" type="text" class="validate" name="address" required>
           				<label for="address">Address</label>
         			</div>
       			</div>
       			<div class="row">
         			<div class="input-field col s12">
-          				<input id="reservation" type="text" class="validate" name="d_of_reser">
+          				<input id="reservation" type="text" class="validate" name="d_of_reser" required>
           				<label for="reservation">Date for your Reservation</label>
         			</div>
       			</div>
       			<div class="row">
         			<div class="input-field col s12">
-          				<input id="team" type="text" class="validate" name="team">
+          				<input id="team" type="text" class="validate" name="team" required>
           				<label for="team">Number of members of your team</label>
         			</div>
       			</div>
       			<div class="row">
         			<div class="input-field col s6">
-          				<input id="mobileNum" type="text" class="validate" name="mob_num">
+          				<input id="mobileNum" type="text" class="validate" name="mob_num" required>
           				<label for="mobileNum">Mobile Number</label>
         			</div>
         			<div class="input-field col s6">
-          				<input id="email" type="email" class="validate" name="email">
+          				<input id="email" type="email" class="validate" name="email" required>
           				<label for="email">Email</label>
         			</div>
       			</div>
@@ -65,7 +65,7 @@
         			<div class="col s12">
           				Package to prefer to get :
           				<div class="input-field inline">
-            				<input id="package" type="text" class="validate" name="pack">
+            				<input id="package" type="text" class="validate" name="pack" required>
             				<label for="package">Package</label>
             				<span class="helper-text" data-error="wrong" data-success="right">Only package number</span>
           				</div>
