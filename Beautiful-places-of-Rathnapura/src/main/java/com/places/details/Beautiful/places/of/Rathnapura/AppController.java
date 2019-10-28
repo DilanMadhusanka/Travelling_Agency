@@ -132,7 +132,7 @@ public class AppController {
 		List<PlacesModel> detailsList = placesService.getPlaceDetailsList();
 		for(int index= 0; index <12; index++) {
 						
-			if(detailsList.get(index).getTopic().equals(name)) {
+			if(detailsList.get(index).getTopic().toLowerCase().contains(name.toLowerCase())) {
 				PlacesModel placesModel = detailsList.get(index);
 				model.addAttribute("details", placesModel);
 				return "details";
