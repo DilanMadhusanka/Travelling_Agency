@@ -155,5 +155,9 @@ public class AppController {
 		registrationRepository.save(new RegistrationModel(id,fname,lname,address,d_of_reser,team,mob_num,email,pack));
 		return "registration";
 	}
+	@RequestMapping("/thingsToDo")
+	public String seePackage() {
+		return "packages";
+	}
 	
 }

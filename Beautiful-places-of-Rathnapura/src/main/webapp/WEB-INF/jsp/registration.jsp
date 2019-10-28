@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Registration</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link href="<c:url value="/resources/css/style-registration.css" />" rel="stylesheet"  type="text/css" />
@@ -67,7 +67,7 @@
           				<div class="input-field inline">
             				<input id="package" type="text" class="validate" name="pack" required>
             				<label for="package">Package</label>
-            				<span class="helper-text" data-error="wrong" data-success="right">Only package number</span>
+            				<span class="helper-text" data-error="wrong" data-success="right">To find the package number visit Things to Do</span>
           				</div>
         			</div>
       			</div>
