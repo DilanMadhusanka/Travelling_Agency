@@ -160,4 +160,9 @@ public class AppController {
 		return "packages";
 	}
 	
+	@RequestMapping("/checkOwnDetails")
+	public String checkOwnDetails() {
+		return "check_details";
+	}
+	
 }

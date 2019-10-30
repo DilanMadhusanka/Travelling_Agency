@@ -62,6 +62,12 @@
         			</div>
       			</div>
       			<div class="row">
+        			<div class="input-field col s12">
+          				<input id="password" type="password" class="validate">
+          				<label for="password">Password</label>
+        			</div>
+      			</div>
+      			<div class="row">
         			<div class="col s12">
           				Package to prefer to get :
           				<div class="input-field inline">
@@ -72,9 +78,11 @@
         			</div>
       			</div>
       			<button type="submit" class="btn btn-secondary btn-lg btn-block" id="btnRegister">Block level button</button>
-
     		</form>
   		</div>
+  		<div class="details_check">
+      		<a href="/checkOwnDetails" id="check">Check your details</a>
+      	</div>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>

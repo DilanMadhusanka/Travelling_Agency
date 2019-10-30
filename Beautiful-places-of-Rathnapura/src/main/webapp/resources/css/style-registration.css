@@ -27,3 +27,7 @@ body {
 #btnRegister {
 	padding-bottom:40px;
 }
+
+.details_check a {
+	text-align:center;
+}
