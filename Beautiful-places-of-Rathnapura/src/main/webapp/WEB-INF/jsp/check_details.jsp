@@ -9,18 +9,23 @@
 </head>
 <body>
 	<div class="wrapper">
-		<div class="row">
-    		<div class="input-field col s12">
-      			<input id="first_name2" type="text" class="validate">
-      			<label class="active" for="first_name2">First Name</label>
-    		</div>
-  		</div>
-  		<div class="row">
-        	<div class="input-field col s12">
-          		<input id="password" type="password" class="validate">
-          		<label for="password">Password</label>
-        	</div>
-      	</div>
+		<form action="/checkOwnDetails" method="get">
+			<div class="row">
+    			<div class="input-field col s12">
+      				<input id="first_name2" type="text" class="validate">
+      				<label class="active" for="first_name2">First Name</label>
+    			</div>
+  			</div>
+  			<div class="row">
+        		<div class="input-field col s12">
+          			<input id="password" type="password" class="validate">
+          			<label for="password">Password</label>
+        		</div>
+      		</div>
+      		<button class="btn waves-effect waves-light" type="submit" name="action" id="search">Submit
+    			<i class="material-icons right">send</i>
+  			</button>
+		</form>
 	</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

@@ -63,7 +63,7 @@
       			</div>
       			<div class="row">
         			<div class="input-field col s12">
-          				<input id="password" type="password" class="validate">
+          				<input id="password" type="password" class="validate" name="password" required>
           				<label for="password">Password</label>
         			</div>
       			</div>

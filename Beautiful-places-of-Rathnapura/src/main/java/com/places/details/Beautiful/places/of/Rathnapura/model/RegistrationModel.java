@@ -31,6 +31,9 @@ public class RegistrationModel {
 	@Column(name="mobile")
 	private int mobile;
 	
+	@Column(name="password")
+	private String password;
+	
 	@Column(name="email")
 	private String email;
 	
@@ -42,7 +45,7 @@ public class RegistrationModel {
 	}
 
 	public RegistrationModel(String national_id, String first_name, String last_name, String address, String date,
-			int num_of_team, int mobile, String email, int package_num) {
+			int num_of_team, int mobile, String password, String email, int package_num) {
 		super();
 		this.national_id = national_id;
 		this.first_name = first_name;
@@ -51,6 +54,7 @@ public class RegistrationModel {
 		this.date = date;
 		this.num_of_team = num_of_team;
 		this.mobile = mobile;
+		this.password = password;
 		this.email = email;
 		this.package_num = package_num;
 	}
@@ -111,6 +115,14 @@ public class RegistrationModel {
 		this.mobile = mobile;
 	}
 
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
 	public String getEmail() {
 		return email;
 	}
@@ -126,7 +138,5 @@ public class RegistrationModel {
 	public void setPackage_num(int package_num) {
 		this.package_num = package_num;
 	}
-	
-	
 	
 }
