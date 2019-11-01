@@ -29,6 +29,9 @@ public class AppController {
 	
 	@Autowired
 	RegistrationRepository registrationRepository;
+	
+	@Autowired
+	CheckingUserValidation checkingUserValidation;
 
 	@RequestMapping("/locations")
 	public String showLocations(Model model) {
@@ -160,9 +163,22 @@ public class AppController {
 		return "packages";
 	}
 	
-	@RequestMapping("/checkOwnDetails")
+	@RequestMapping(value = "/checkOwnDetails", method=RequestMethod.GET)
 	public String checkOwnDetails() {
 		return "check_details";
+	}
+	
+	@RequestMapping(value = "/checkOwnDetails", method=RequestMethod.POST)
+	public String checkingOwnDetails(@RequestParam String first_name, @RequestParam String password, Model model) {
+		if(checkingUserValidation.isUservslid(first_name, password)) {
+			model.addAttribute("firstName", first_name);
+			model.addAttribute("password", password);
+		}
+		
+		else {
+			model.addAttribute("errorMassage", "Invalid User!");
+		}
+		return "results";
 	}
 	
 }

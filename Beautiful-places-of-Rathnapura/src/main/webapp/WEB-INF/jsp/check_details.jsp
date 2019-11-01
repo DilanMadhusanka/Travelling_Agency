@@ -9,16 +9,16 @@
 </head>
 <body>
 	<div class="wrapper">
-		<form action="/checkOwnDetails" method="get">
+		<form action="/checkOwnDetails" method="post">
 			<div class="row">
     			<div class="input-field col s12">
-      				<input id="first_name2" type="text" class="validate">
+      				<input id="first_name2" type="text" class="validate" name="first_name">
       				<label class="active" for="first_name2">First Name</label>
     			</div>
   			</div>
   			<div class="row">
         		<div class="input-field col s12">
-          			<input id="password" type="password" class="validate">
+          			<input id="password" type="password" class="validate" name="password">
           			<label for="password">Password</label>
         		</div>
       		</div>
