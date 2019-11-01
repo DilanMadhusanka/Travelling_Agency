@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,7 +23,10 @@
           			<label for="password">Password</label>
         		</div>
       		</div>
-      		<button class="btn waves-effect waves-light" type="submit" name="action" id="search">Submit
+      		<div class="error_msg">
+      			<p>${errorMessage}</p>
+      		</div>
+      		<button class="btn waves-effect waves-light" type="submit" name="action" id="btn_search">Submit
     			<i class="material-icons right">send</i>
   			</button>
 		</form>

@@ -170,15 +170,25 @@ public class AppController {
 	
 	@RequestMapping(value = "/checkOwnDetails", method=RequestMethod.POST)
 	public String checkingOwnDetails(@RequestParam String first_name, @RequestParam String password, Model model) {
-		if(checkingUserValidation.isUservslid(first_name, password)) {
-			model.addAttribute("firstName", first_name);
-			model.addAttribute("password", password);
+		
+		if(checkingUserValidation.isUservslid(first_name, password) == null) {
+			model.addAttribute("errorMessage", "Invlid Inputs! Check your Username and Password again!!");
+			return "check_details";
 		}
 		
-		else {
-			model.addAttribute("errorMassage", "Invalid User!");
-		}
-		return "results";
+		RegistrationModel mod = checkingUserValidation.isUservslid(first_name, password);
+		
+		model.addAttribute("firstName", mod.getFirst_name());
+		model.addAttribute("lastName", mod.getLast_name());
+		model.addAttribute("national_id", mod.getNational_id());
+		model.addAttribute("address", mod.getAddress());
+		model.addAttribute("date_res", mod.getDate());
+		model.addAttribute("num_of_team", mod.getNum_of_team());
+		model.addAttribute("mob_num", mod.getMobile());
+		model.addAttribute("email", mod.getEmail());
+		model.addAttribute("package_num", mod.getPackage_num());
+		
+		return "registration";
 	}
 	
 }

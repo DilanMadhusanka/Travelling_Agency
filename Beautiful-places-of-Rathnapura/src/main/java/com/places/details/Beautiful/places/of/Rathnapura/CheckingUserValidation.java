@@ -13,16 +13,18 @@ public class CheckingUserValidation {
 	@Autowired
 	UserValidationService userValidationService;
 
-	public boolean isUservslid(String firstName, String password) {
+	public RegistrationModel isUservslid(String firstName, String password) {
 		
 		List<RegistrationModel> userDetails = userValidationService.getUserDetails();
+		RegistrationModel registrationModel;
 		
 		for(int i =0; i<userDetails.size(); i++) {
 			if(firstName.equals(userDetails.get(i).getFirst_name()) && password.equals(userDetails.get(i).getPassword())) {
-				return true;
+				registrationModel = userDetails.get(i);
+				return registrationModel;
 			}
 		}
 		
-		return false;
+		return null;
 	}
 }
