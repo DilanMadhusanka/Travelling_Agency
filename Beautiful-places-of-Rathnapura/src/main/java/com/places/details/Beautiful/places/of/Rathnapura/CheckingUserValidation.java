@@ -5,6 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.places.details.Beautiful.places.of.Rathnapura.model.RegistrationModel;
+
 @Service
 public class CheckingUserValidation {
 	
@@ -13,11 +15,10 @@ public class CheckingUserValidation {
 
 	public boolean isUservslid(String firstName, String password) {
 		
-		List<String> detailsName = userValidationService.getUserDetails();
-		List<String> detailsPassword = userValidationService.getUserPassword();
+		List<RegistrationModel> userDetails = userValidationService.getUserDetails();
 		
-		for(int i =0; i<detailsName.size() && i<detailsPassword.size(); i++) {
-			if(firstName.equals(detailsName.get(i)) && password.equals(detailsPassword.get(i))) {
+		for(int i =0; i<userDetails.size(); i++) {
+			if(firstName.equals(userDetails.get(i).getFirst_name()) && password.equals(userDetails.get(i).getPassword())) {
 				return true;
 			}
 		}

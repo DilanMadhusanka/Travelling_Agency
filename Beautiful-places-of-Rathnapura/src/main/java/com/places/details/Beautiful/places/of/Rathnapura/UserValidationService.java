@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.places.details.Beautiful.places.of.Rathnapura.jpa.RegistrationRepository;
+import com.places.details.Beautiful.places.of.Rathnapura.model.RegistrationModel;
 
 @Service
 public class UserValidationService {
@@ -14,19 +15,13 @@ public class UserValidationService {
 	@Autowired
 	RegistrationRepository registrationRepo;
 	
-	public List<String> getUserDetails() {
-		List<String> list = new ArrayList<>();
-		for(int i=0; i< registrationRepo.findAll().size();i++) {
-			list.add(registrationRepo.findAll().get(i).getFirst_name());
+	public List<RegistrationModel> getUserDetails() {
+		List<RegistrationModel> list = new ArrayList<>();
+		
+		for(RegistrationModel registrationModel : registrationRepo.findAll()) {
+			list.add(registrationModel);
 		}
+		
 		return list;
-	}
-	
-	public List<String> getUserPassword() {
-		List<String> listOfPassword = new ArrayList<>();
-		for(int i=0; i< registrationRepo.findAll().size();i++) {
-			listOfPassword.add(registrationRepo.findAll().get(i).getPassword());
-		}
-		return listOfPassword;
 	}
 }

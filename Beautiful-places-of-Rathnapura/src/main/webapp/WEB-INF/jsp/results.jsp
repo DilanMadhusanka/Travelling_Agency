@@ -8,6 +8,7 @@
 </head>
 <body>
 	<p>${firstName}</p>
+	<p>${password}</p>
 	<p>${errorMassage}</p>
 </body>
 </html>
