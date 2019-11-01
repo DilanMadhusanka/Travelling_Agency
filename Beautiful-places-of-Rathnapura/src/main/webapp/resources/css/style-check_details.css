@@ -1,0 +1,11 @@
+@charset "ISO-8859-1";
+
+#btn_search {
+	margin-left:5px;
+}
+
+.error_msg p {
+	color:red;
+	margin-left:20px;
+	font-size: 15px;
+}
