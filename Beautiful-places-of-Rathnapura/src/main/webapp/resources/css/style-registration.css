@@ -1,7 +1,7 @@
 @charset "ISO-8859-1";
 
 body {
-	background-image:url("https://cdn.pixabay.com/photo/2017/07/01/19/48/background-2462434_1280.jpg");
+	background-image:url("https://cdn.pixabay.com/photo/2016/06/22/16/22/clouds-1473311_1280.jpg");
 	background-repeat: no-repeat;
 	background-size:cover;
 }
@@ -10,6 +10,7 @@ body {
 	width:1000px;
 	margin:0 auto;
 	padding:50px;
+	opacity:0.8;
 }
 
 .header {
@@ -18,16 +19,31 @@ body {
 }
 
 .header h1 {
-	color:#d500f9;
+	font-family: Pacifico;
+	font-size: 60px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	line-height: 26.4px;
+	margin-bottom:60px;
 	text-align:center;
-	font-size:60px;
-	font-family:serif;
+	color:#616161;
+	opacity:0.9;
 }
 
 #btnRegister {
 	padding-bottom:40px;
 }
 
-.details_check a {
+.details_check {
 	text-align:center;
+}
+
+#check {
+	
+}
+
+#check:hover {
+	color:#dd2c00;
+	text-decoration:none;
 }

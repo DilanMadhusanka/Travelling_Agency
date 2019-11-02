@@ -8,6 +8,7 @@
 <title>Registration</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Pacifico" />
 <link href="<c:url value="/resources/css/style-registration.css" />" rel="stylesheet"  type="text/css" />
 </head>
 <body>
@@ -81,7 +82,7 @@
     		</form>
   		</div>
   		<div class="details_check">
-      		<a href="/checkOwnDetails" id="check">Check your details</a>
+      		<a href="/checkOwnDetails" id="check">Check your details &#8811;&#8811;</a>
       	</div>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
