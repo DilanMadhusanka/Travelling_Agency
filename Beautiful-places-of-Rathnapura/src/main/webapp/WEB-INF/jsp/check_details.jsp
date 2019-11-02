@@ -31,6 +31,7 @@
     			<i class="material-icons right">send</i>
   			</button>
 		</form>
+		<center><a class="waves-effect deep-orange lighten-5 btn-small" href="/" id="back_home">&lt;&lt; Back to Home</a></center>
 	</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

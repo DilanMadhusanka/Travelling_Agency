@@ -63,7 +63,7 @@
       			</div>
       			<div class="row">
         			<div class="input-field col s12">
-          				<input id="password" type="password" class="validate" name="password" required>
+          				<input id="password" type="password" class="validate" name="password" value="${password}" required>
           				<label for="password">Password</label>
         			</div>
       			</div>
@@ -77,7 +77,7 @@
           				</div>
         			</div>
       			</div>
-      			<button type="submit" class="btn btn-secondary btn-lg btn-block" id="btnRegister">Block level button</button>
+      			<button type="submit" class="btn btn-secondary btn-lg btn-block" id="btnRegister">Register to Agency</button>
     		</form>
   		</div>
   		<div class="details_check">

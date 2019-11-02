@@ -185,6 +185,7 @@ public class AppController {
 		model.addAttribute("date_res", mod.getDate());
 		model.addAttribute("num_of_team", mod.getNum_of_team());
 		model.addAttribute("mob_num", mod.getMobile());
+		model.addAttribute("password", mod.getPassword());
 		model.addAttribute("email", mod.getEmail());
 		model.addAttribute("package_num", mod.getPackage_num());
 		
