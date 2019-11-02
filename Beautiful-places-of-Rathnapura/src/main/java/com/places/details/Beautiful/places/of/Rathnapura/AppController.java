@@ -154,8 +154,9 @@ public class AppController {
 	
 	@RequestMapping(value = "/guideHelp", method = RequestMethod.POST)
 	public String saveData(@RequestParam String fname, @RequestParam String lname, @RequestParam String id, @RequestParam String address,
-			@RequestParam String d_of_reser, @RequestParam int team, @RequestParam int mob_num,@RequestParam String password, @RequestParam String email, @RequestParam int pack) {
+			@RequestParam String d_of_reser, @RequestParam int team, @RequestParam int mob_num,@RequestParam String password, @RequestParam String email, @RequestParam int pack, Model model) {
 		registrationRepository.save(new RegistrationModel(id,fname,lname,address,d_of_reser,team,mob_num,password,email,pack));
+		model.addAttribute("successMessage", "Successfully!! Your data was recorded!!");
 		return "registration";
 	}
 	@RequestMapping("/thingsToDo")

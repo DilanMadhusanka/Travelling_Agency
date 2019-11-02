@@ -16,6 +16,9 @@
 		<h1>Register for Agency</h1>
 	</div>
 	<div class="card" id="form">
+		<div class="successMessage">
+			<p>${successMessage}</p>
+		</div>
 		 <div class="row">
     		<form class="col s12" action="/guideHelp" method="post">
       			<div class="row">
