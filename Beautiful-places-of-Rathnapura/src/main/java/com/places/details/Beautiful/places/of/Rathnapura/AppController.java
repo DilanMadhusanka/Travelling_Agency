@@ -193,4 +193,9 @@ public class AppController {
 		return "registration";
 	}
 	
+	@RequestMapping("/placesToStay")
+	public String goPlacesToStay() {
+		return "places_to_stay";
+	}
+	
 }

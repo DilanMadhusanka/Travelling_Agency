@@ -1,0 +1,9 @@
+@charset "ISO-8859-1";
+
+.card {
+	width: 300px;
+}
+
+.card-image {
+	height:auto;
+}
