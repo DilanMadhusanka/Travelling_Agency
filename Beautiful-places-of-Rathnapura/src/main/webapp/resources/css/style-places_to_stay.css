@@ -2,8 +2,11 @@
 
 .card {
 	width: 300px;
+	display:inline-block;
+	margin:10px;
 }
 
 .card-image {
-	height:auto;
+	height:300px;
+	 display:flex;
 }
