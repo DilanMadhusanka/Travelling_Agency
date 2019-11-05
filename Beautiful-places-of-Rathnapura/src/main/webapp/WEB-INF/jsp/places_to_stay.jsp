@@ -17,47 +17,26 @@
 </head>
 <body>
 	<div class="wrapper">
+	
+	<c:forEach items="${restPlaces}" var="place" varStatus="placesCount">
+		<c:if test="${(placesCount.count-1) mod 4 eq 0}">
+			<p></p>
+		</c:if>
 		<div class="card" id="card_place">
     		<div class="card-image waves-effect waves-block waves-light">
-      			<img class="activator" src="https://images.unsplash.com/photo-1470165301023-58dab8118cc9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80">
+      			<img class="activator" src="${place.image}">
     		</div>
     		<div class="card-content">
-      			<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      			<p><a href="#">This is a link</a></p>
+      			<span class="card-title activator grey-text text-darken-4">${place.title}<i class="material-icons right">more_vert</i></span>
+      			<p><a href="${place.link}">This is a link</a></p>
     		</div>
     		<div class="card-reveal">
       			<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      			<p>Here is some more information about this product that is only revealed once clicked on.</p>
+      			<p>${place.information}</p>
     		</div>
   		</div>
-  		
-  		<div class="card" id="card_place">
-    		<div class="card-image waves-effect waves-block waves-light">
-      			<img class="activator" src="https://images.unsplash.com/photo-1470165301023-58dab8118cc9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80">
-    		</div>
-    		<div class="card-content">
-      			<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      			<p><a href="#">This is a link</a></p>
-    		</div>
-    		<div class="card-reveal">
-      			<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      			<p>Here is some more information about this product that is only revealed once clicked on.</p>
-    		</div>
-  		</div>
-  		
-  		<div class="card" id="card_place">
-    		<div class="card-image waves-effect waves-block waves-light">
-      			<img class="activator" src="https://images.unsplash.com/photo-1470165301023-58dab8118cc9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80">
-    		</div>
-    		<div class="card-content">
-      			<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-      			<p><a href="#">This is a link</a></p>
-    		</div>
-    		<div class="card-reveal">
-      			<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-      			<p>Here is some more information about this product that is only revealed once clicked on.</p>
-    		</div>
-  		</div>
+	</c:forEach>
+		
 	</div>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

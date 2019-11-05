@@ -14,6 +14,7 @@ import com.places.details.Beautiful.places.of.Rathnapura.jpa.RegistrationReposit
 import com.places.details.Beautiful.places.of.Rathnapura.model.ImageModel;
 import com.places.details.Beautiful.places.of.Rathnapura.model.PlacesModel;
 import com.places.details.Beautiful.places.of.Rathnapura.model.RegistrationModel;
+import com.places.details.Beautiful.places.of.Rathnapura.model.RestPlacesModel;
 
 @Controller
 public class AppController {
@@ -32,6 +33,9 @@ public class AppController {
 	
 	@Autowired
 	CheckingUserValidation checkingUserValidation;
+	
+	@Autowired
+	RestPlacesService restPlacesService;
 
 	@RequestMapping("/locations")
 	public String showLocations(Model model) {
@@ -194,7 +198,9 @@ public class AppController {
 	}
 	
 	@RequestMapping("/placesToStay")
-	public String goPlacesToStay() {
+	public String goPlacesToStay(Model model) {
+		List<RestPlacesModel> restPlacesList = restPlacesService.getRestPlacesDetails();
+		model.addAttribute("restPlaces", restPlacesList);
 		return "places_to_stay";
 	}
 	
