@@ -19,7 +19,7 @@
 	<div class="wrapper">
 	
 	<c:forEach items="${restPlaces}" var="place" varStatus="placesCount">
-		<c:if test="${(placesCount.count-1) mod 4 eq 0}">
+		<c:if test="${(placesCount.count-1) mod 3 eq 0}">
 			<p></p>
 		</c:if>
 		<div class="card" id="card_place">
