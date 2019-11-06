@@ -5,6 +5,12 @@
 	padding:0;
 }
 
+body {
+	background-color:lightgray;
+	background-image: url("https://images.unsplash.com/photo-1546507257-0bddab98fe3c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+	background-size:cover;
+}
+
 .wrapper {
 	width:1000px;
 }
@@ -18,4 +24,8 @@
 .card-image {
 	height:280px;
 	 display:flex;
+}
+
+#title {
+	font-size:18px;
 }
