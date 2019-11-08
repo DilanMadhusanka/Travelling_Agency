@@ -28,7 +28,7 @@
     		</div>
     		<div class="card-content">
       			<span class="card-title activator grey-text text-darken-4" id="title">${place.title}<i class="material-icons right">more_vert</i></span>
-      			<p><a href="${place.link}">This is a link</a></p>
+      			<p><a href="${place.link}"><img class="location-icon" alt="location" src="https://img.icons8.com/bubbles/2x/worldwide-location.png"></a></p>
     		</div>
     		<div class="card-reveal">
       			<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
